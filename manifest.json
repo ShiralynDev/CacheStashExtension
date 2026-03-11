@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "CacheStash CORS Bridge",
+    "version": "1.0.1",
+    "permissions": [
+        "cookies"
+    ],
+    "host_permissions": [
+        "https://www.geocaching.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "externally_connectable": {
+        "matches": [
+            "http://localhost:5173/*"
+        ]
+    }
+}
